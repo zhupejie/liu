@@ -15,7 +15,7 @@
 </script>
 <style scoped>
 div {
-    background-image:url(http://h5zz.cn/item/dist/static/img/guide5.jpg);
+    background-image:url(http://h5zz.cn/item/liu/static/img/guide5.png);
     background-size:contain;
     background-repeat:no-repeat;
 	background-position:center;

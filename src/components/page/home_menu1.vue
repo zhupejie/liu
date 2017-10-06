@@ -42,7 +42,7 @@ export default {
     height: .6rem;
     line-height: 0;
     min-width: 0;
-    background-image:url(http://h5zz.cn/item/dist/static/img/home_btn.png);
+    background-image:url(http://h5zz.cn/item/liu/static/img/home_btn.png);
     background-repeat:no-repeat;
     background-size:cover;
     background-color:transparent;
@@ -51,11 +51,11 @@ export default {
     position: fixed;
 }
 .home_btn1.active{
-   background-image:url(http://h5zz.cn/item/dist/static/img/home_btn_active.png); 
+   background-image:url(http://h5zz.cn/item/liu/static/img/home_btn_active.png); 
 }
 .mu-drawer{
     width: 2.5rem;
-    background-image:url(http://h5zz.cn/item/dist/static/img/nav.jpg);
+    background-image:url(http://h5zz.cn/item/liu/static/img/nav.png);
     background-repeat:no-repeat;
     background-size:cover;
     background-color:transparent;

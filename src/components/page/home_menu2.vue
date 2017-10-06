@@ -70,7 +70,7 @@ export default {
     #showTop{
         width: 1.16rem;
         height: 1.16rem;
-        background-image:url(http://h5zz.cn/item/dist/static/img/home_pic_10.jpg);
+        background-image:url(http://h5zz.cn/item/liu/static/img/home_pic_10.jpg);
         background-repeat:no-repeat;
         background-size:cover;
         background-color:transparent;
@@ -81,7 +81,7 @@ export default {
         outline:none
     }
     #showTop.active{
-        background-image:url(http://h5zz.cn/item/dist/static/img/home_btn2.png);
+        background-image:url(http://h5zz.cn/item/liu/static/img/home_btn2.png);
     }
     .cbp-spmenu{
         height: 9.84rem;

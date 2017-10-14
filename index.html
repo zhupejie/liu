@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>流艺APP</title>
+    <meta name="viewport" content="user-scalable=0,initial-scale=1.0,width=device-width,maximum-scale=1, minimum-scale=1">
+    <!-- <script>!function(e){function t(a){if(i[a])return i[a].exports;var n=i[a]={exports:{},id:a,loaded:!1};return e[a].call(n.exports,n,n.exports,t),n.loaded=!0,n.exports}var i={};return t.m=e,t.c=i,t.p="",t(0)}([function(e,t){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var i=window;t["default"]=i.flex=function(normal,e,t){var a=e||100,n=t||1,r=i.document,o=navigator.userAgent,d=o.match(/Android[\S\s]+AppleWebkit\/(\d{3})/i),l=o.match(/U3\/((\d+|\.){5,})/i),c=l&&parseInt(l[1].split(".").join(""),10)>=80,p=navigator.appVersion.match(/(iphone|ipad|ipod)/gi),s=i.devicePixelRatio||1;p||d&&d[1]>534||c||(s=1);var u=normal?1:1/s,m=r.querySelector('meta[name="viewport"]');m||(m=r.createElement("meta"),m.setAttribute("name","viewport"),r.head.appendChild(m)),m.setAttribute("content","width=device-width,user-scalable=no,initial-scale="+u+",maximum-scale="+u+",minimum-scale="+u),r.documentElement.style.fontSize=normal?"50px": a/2*s*n+"px"},e.exports=t["default"]}]);  flex(false,100, 1);</script> -->
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_425001_urrzrzik7pjpp66r.css">
+        <style>
+        *{
+            box-sizing: border-box;
+            user-select: none;
+            padding: 0;
+            margin: 0;
+            }
+            html,body,#app{
+            height: 100%;
+            font-family: 'Microsoft YaHei';
+            }
+            /*清除浮动*/
+            .clearfix:after{
+                content:"200B";
+                display:block;
+                height:0;
+                clear:both;
+                font-size: 0;
+            }
+            /*IE/7/6*/
+            .clearfix{
+                *zoom:1;
+            }
+            ul{
+                list-style: none;
+            }
+            a{
+                text-decoration: none;
+                font-size: .26rem;
+            }
+            img{
+                width: 100%;
+                display: block;
+            } 
+        </style>
+    </head>
+    <body>
+        <div id="app"></div>
+        <script>
+            // 设备自适应
+            //document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+            function fontSize(){
+                let deviceWidth=document.documentElement.clientWidth;
+                if(deviceWidth > 750) deviceWidth = 750;
+                let _html=document.getElementsByTagName("html")[0];
+                _html.style.fontSize=deviceWidth/7.5+"px";          
+            }
+            fontSize();
+            window.addEventListener('resize',fontSize,false);
+            window.addEventListener('orientationchange',fontSize,false);  /* 这个是移动端设备横屏、竖屏转换时触发的事件处理函数 */    
+        </script>
+    </body>
+</html>
